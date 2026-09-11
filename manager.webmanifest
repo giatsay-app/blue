@@ -1,0 +1,19 @@
+{
+  "name": "Blue Laundry — Quản Lý",
+  "short_name": "Blue QL",
+  "start_url": "quanly.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "icon-quanly.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

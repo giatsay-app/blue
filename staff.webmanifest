@@ -1,0 +1,19 @@
+{
+  "name": "Blue Laundry — Nhân Viên",
+  "short_name": "Blue NV",
+  "start_url": "nhanvien.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#0e7490",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "icon-nhanvien.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

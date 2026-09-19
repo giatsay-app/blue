@@ -1,7 +1,7 @@
 /* Blue Laundry — lưu app vào máy để mở nhanh và dùng được khi mất mạng */
 var CACHE = 'blue-laundry-v1';
 var FILES = ['./', 'index.html', 'nhanvien.html', 'quanly.html',
-             'icon-nhanvien.svg', 'icon-quanly.svg', 'staff.webmanifest', 'manager.webmanifest'];
+             'icon-nhanvien.png', 'icon-quanly.png', 'staff.webmanifest', 'manager.webmanifest'];
 
 self.addEventListener('install', function(e){
   self.skipWaiting();

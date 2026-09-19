@@ -10,10 +10,16 @@
   "lang": "vi",
   "icons": [
     {
-      "src": "icon-quanly.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "icon-quanly.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "icon-quanly.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

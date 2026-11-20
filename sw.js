@@ -1,5 +1,5 @@
 /* Blue Laundry — lưu app vào máy để mở nhanh và dùng được khi mất mạng */
-var CACHE = 'blue-laundry-v1';
+var CACHE = 'blue-laundry-v5';   // đổi số khi phát hành bản mới
 var FILES = ['./', 'index.html', 'nhanvien.html', 'quanly.html',
              'icon-nhanvien.png', 'icon-quanly.png', 'staff.webmanifest', 'manager.webmanifest'];
 
@@ -17,7 +17,9 @@ self.addEventListener('activate', function(e){
 self.addEventListener('fetch', function(e){
   var url = e.request.url;
   /* Dữ liệu Firebase và Telegram luôn đi thẳng ra mạng, không được lưu tạm */
-  if (url.indexOf('firebasedatabase.app') >= 0 || url.indexOf('googleapis.com') >= 0 || url.indexOf('telegram.org') >= 0) return;
+  if (url.indexOf('firebasedatabase.app') >= 0 || url.indexOf('firebaseio.com') >= 0 || url.indexOf('googleapis.com') >= 0 || url.indexOf('telegram.org') >= 0) return;
+  /* Kết nối "nghe thay đổi" (text/event-stream) không bao giờ đi qua bộ nhớ tạm */
+  if ((e.request.headers.get('accept') || '').indexOf('text/event-stream') >= 0) return;
   if (e.request.method !== 'GET') return;
   e.respondWith(
     fetch(e.request).then(function(res){

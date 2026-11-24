@@ -1,5 +1,5 @@
 /* Blue Laundry — lưu app vào máy để mở nhanh và dùng được khi mất mạng */
-var CACHE = 'blue-laundry-v5';   // đổi số khi phát hành bản mới
+var CACHE = 'blue-laundry-v6';   // đổi số khi phát hành bản mới
 var FILES = ['./', 'index.html', 'nhanvien.html', 'quanly.html',
              'icon-nhanvien.png', 'icon-quanly.png', 'staff.webmanifest', 'manager.webmanifest'];
 
